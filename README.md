@@ -22,7 +22,6 @@ Secure student marketplace for UTRGV
 
 # Database Structure
 
-*Tables your future database will include:*
 - Users
 - Listings
 - Messages
@@ -33,3 +32,4 @@ Secure student marketplace for UTRGV
 ---
 
 #Figma Design
+https://www.figma.com/design/yjEqDKArwcW4sYHRUJSs5w/Untitled?node-id=0-1&t=MHj9IJkhUI5dOhAP-1
