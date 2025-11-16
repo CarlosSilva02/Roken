@@ -31,5 +31,5 @@ Secure student marketplace for UTRGV
 
 ---
 
-#Figma Design
+#Figma Design link
 https://www.figma.com/design/yjEqDKArwcW4sYHRUJSs5w/Untitled?node-id=0-1&t=MHj9IJkhUI5dOhAP-1
