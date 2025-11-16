@@ -180,3 +180,28 @@ if (applyBtn) {
     renderHomeListings(results);
   });
 }
+
+// ===============================
+// Profile Picture Upload
+// ===============================
+const uploadInput = document.getElementById("uploadProfilePic");
+const profilePic = document.getElementById("profilePic");
+
+if (uploadInput && profilePic) {
+  uploadInput.addEventListener("change", function() {
+    const file = this.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        profilePic.src = e.target.result; // sets uploaded image
+        localStorage.setItem("profilePic", e.target.result); // optional: save in localStorage
+      }
+      reader.readAsDataURL(file); // convert file to data URL
+    }
+  });
+
+  // Load from localStorage if exists
+  const savedPic = localStorage.getItem("profilePic");
+  if (savedPic) profilePic.src = savedPic;
+}
+
