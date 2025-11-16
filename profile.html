@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Roken</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Roken</h1>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#">Browse</a>
+      <a href="mylistings.html">My Listings</a>
+      <a href="profile.html">Profile</a>
+      <div class="dropdown">
+        <button id="account-btn">Account ⌄</button>
+        <div class="dropdown-content" id="dropdown-menu">
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+          <a href="#">Profile</a>
+          <a href="#" id="darkModeToggle">Dark Mode</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Profile Section -->
+  <div class="main-section">
+    <h2>My Profile</h2>
+    <div id="profileInfo">
+      <img id="profilePic" src="default-profile.png" alt="Profile Picture" style="width:150px; border-radius:50%;">
+      <p><strong>Username:</strong> <span id="username">User1</span></p>
+      <input type="file" id="uploadProfilePic" accept="image/*">
+    </div>
+  </div>
+
+  <!-- User Listings with Delete -->
+  <div class="main-section">
+    <h2>My Listings</h2>
+    <div id="userListings"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
